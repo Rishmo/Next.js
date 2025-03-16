@@ -1,5 +1,10 @@
 
 import styles from './page.module.css'
+
+import ExampleClient from '@/components/ExampleClient';
+
+import ExampleServer from '@/components/ExampleServer';
+
 export default function Home() {
 
   console.log("Where do i render?"); //server side rendering
@@ -9,6 +14,10 @@ export default function Home() {
       // </main>
       <main className= {styles.main}>
         Hello World
+
+        <ExampleClient />   {/* client side rendering */}
+        <ExampleServer />   { /* server side rendering */}
+
       </main>
       
   );
